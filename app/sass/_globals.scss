@@ -1,0 +1,110 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    font-family: 'Homenaje', sans-serif;
+}
+
+//FLEXBOX 
+.flex {
+    display: flex;
+    &-js-sb {
+        justify-content: space-between;
+    }
+    &-js-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+.margin-max {
+    .margin-max--left {
+        margin-left: 2.4rem;
+    }
+    .margin-max--right {
+        margin-right: 2.4rem;
+    }
+    .margin-max--bottom {
+        margin-bottom: 2.4rem;
+    }
+    .margin-max--top {
+        margin-top: 2.4rem;
+    }
+    margin: 2.4rem;
+}
+
+.margin-mid {
+    margin: 1.6rem;
+    .margin-mid--left {
+        margin-left: 1.6rem;
+    }
+    .margin-mid--right {
+        margin-right: 1.6rem;
+    }
+    .margin-mid--top {
+        margin-top: 1.6rem;
+    }
+    .margin-mid--bottom {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.margin-min {
+    margin: 0.6rem;
+    .margin-min--bottom {
+        margin-bottom: 0.6rem;
+    }
+    .margin-min--top {
+        margin-top: 0.6rem;
+    }
+    .margin-min--left {
+        margin-left: 0.6rem;
+    }
+    .margin-min--right {
+        margin-right: 0.6rem;
+    }
+}
+
+button,
+.button {
+    padding: 0.875rem 1.875rem;
+    background: linear-gradient(to right, $primary-red, rgb(245, 51, 116));
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: $font-medium;
+    font-weight: 700;
+}
+
+//visibility
+.hide-for-mobile {
+    @include breakpoint-down(small) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(medium) {
+        display: none;
+    }
+}
+
+.logoandburger {
+    @include breakpoint-down(small) {
+        justify-content: space-between;
+    }
+}

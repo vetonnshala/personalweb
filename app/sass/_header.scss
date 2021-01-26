@@ -1,0 +1,50 @@
+.header {
+    background: $primary-blue;
+    &__nav {
+        padding: 1.06rem 1.5rem;
+        &--navlinks {
+            width: 50%;
+            .navlink {
+                text-decoration: none;
+                font-size: $font-medium;
+                color: #fff;
+                transition: 0.2s ease-in-out;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    background: $primary-red;
+                    left: 0;
+                    right: 0;
+                    bottom: -10px;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in-out;
+                }
+                 :visited,
+                a:hover {
+                    text-decoration: none;
+                }
+                &:hover {
+                    color: rgb(194, 194, 194);
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &--hamburger {
+            //display: none;
+            padding: 0;
+            span {
+                display: block;
+                width: 26px;
+                height: 2px;
+                background-color: $primary-red;
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}
