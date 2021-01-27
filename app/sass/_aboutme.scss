@@ -1,0 +1,47 @@
+.aboutme {
+    height: 80vh;
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 6rem;
+    &__links {
+        margin-bottom: 2rem;
+        &--link {
+            text-decoration: none;
+            font-size: $font-medium;
+            outline: none;
+            color: #fff;
+            background: transparent;
+            border: none;
+            transition: 0.2s ease-in-out;
+            font-family: inherit;
+            position: relative;
+            cursor: pointer;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                background: $primary-red;
+                left: 0;
+                right: 0;
+                bottom: -10px;
+                opacity: 0;
+                transition: opacity 0.2s ease-in-out;
+            }
+             :visited,
+            a:hover {
+                text-decoration: none;
+                border: none;
+            }
+            &:hover {
+                color: rgb(194, 194, 194);
+                &::before {
+                    opacity: 1;
+                }
+            }
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}

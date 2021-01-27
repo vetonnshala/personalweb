@@ -28,6 +28,11 @@
     &__nav {
         padding: 1.06rem 1.5rem;
         position: relative;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
         &--navlinks {
             width: 50%;
             .navlink {

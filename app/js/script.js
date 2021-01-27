@@ -5,8 +5,6 @@ const fadeElems = document.querySelectorAll('.has-fade')
 const body = document.querySelector('body');
 
 btnHamburger.addEventListener('click', function() {
-
-
     if (header.classList.contains('open')) { //close hamburger menu
         body.classList.remove('noscroll');
         header.classList.remove('open');
@@ -22,6 +20,27 @@ btnHamburger.addEventListener('click', function() {
             element.classList.add('fade-in');
         });
 
+    }
+
+});
+
+
+//aboutme
+
+const expBtn = document.document.querySelector('aboutme ');
+const fadetxt = document.querySelectorAll('.fadetxt')
+
+expBtn.addEventListener('click', function() {
+    if (header.classList.contains('open')) { //close hamburger menu
+        fadetxt.forEach(function(element) {
+            element.classList.remove('fade-in');
+            element.classList.add('fade-out');
+        });
+    } else { //open hamburger menu 
+        fadetxt.forEach(function(element) {
+            element.classList.remove('fade-out');
+            element.classList.add('fade-in');
+        });
     }
 
 });
