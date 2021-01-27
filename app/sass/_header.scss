@@ -1,7 +1,33 @@
 .header {
-    background: $primary-blue;
+    background: transparent;
+    //Hamburger menu 
+    &.open {
+        .header__toggle {
+            >span:first-child {
+                transform: rotate(45deg);
+            }
+            >span:last-child {
+                transform: rotate(-45deg);
+            }
+            >span:nth-child(2) {
+                opacity: 0;
+            }
+        }
+    }
+    .overlay {
+        //display: none;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $primary-blue;
+    }
+    //NAVBAR STYLE
     &__nav {
         padding: 1.06rem 1.5rem;
+        position: relative;
         &--navlinks {
             width: 50%;
             .navlink {
@@ -34,15 +60,44 @@
             }
         }
         &--hamburger {
-            //display: none;
             padding: 0;
             span {
                 display: block;
-                width: 26px;
-                height: 2px;
+                width: 30px;
+                height: 3px;
                 background-color: $primary-red;
+                transition: all 0.3s ease-in-out;
+                transform-origin: 3px 3px;
                 &:not(:last-child) {
-                    margin-bottom: 3px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    &__menu {
+        position: absolute;
+        left: 50%;
+        width: calc(100% - 3rem);
+        transform: translateX(-50%);
+        background: $primary-red;
+        padding: 1.625rem;
+        border-radius: 5px;
+        margin-top: 1.5rem;
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: $font-medium;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
+             :visited,
+            &:hover {
+                text-decoration: none;
+            }
+            &:hover {
+                color: rgb(194, 194, 194);
+                &::before {
+                    opacity: 1;
                 }
             }
         }

@@ -14,6 +14,10 @@ body {
     padding: 0;
     line-height: 1.3;
     font-family: 'Homenaje', sans-serif;
+    font-weight: 300;
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 //FLEXBOX 
@@ -107,4 +111,9 @@ button,
     @include breakpoint-down(small) {
         justify-content: space-between;
     }
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }

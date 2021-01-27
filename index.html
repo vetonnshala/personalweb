@@ -11,32 +11,71 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="flex flex-js-c flex-ai-c header__nav logoandburger">
-
-            <div class="logo hide-for-desktop ">
-                <img src="img/logoM.svg" alt="logo">
+    <main>
+        <header class="header">
+            <!--the background after the dropdown menu opens-->
+            <div class="overlay has-fade hide-for-desktop">
             </div>
 
-            <div class="hide-for-mobile header__nav--navlinks flex flex-js-sb ">
+            <!--nav bar-->
+            <nav class="container flex flex-js-c flex-ai-c header__nav logoandburger">
+                <!--logo on mobile-->
+                <div class="logo hide-for-desktop ">
+                    <img src="img/logoM.svg" alt="logo">
+                </div>
+
+                <!--menu on desktop-->
+                <div class="hide-for-mobile  header__nav--navlinks flex flex-js-sb ">
+                    <a href="#" class="navlink">Home</a>
+                    <a href="#" class="navlink">About me</a>
+                    <a href="#" class="navlink">Projects</a>
+                    <a href="#" class="navlink">Resources</a>
+                    <a href="#" class="navlink">Contact</a>
+                </div>
+
+                <!--"3 the menu lines"-->
+                <a id="btnHamburger" href="#" class=" hide-for-desktop header__toggle header__nav--hamburger ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+            <!--drop down menu on mobile-->
+            <div class="header__menu has-fade hide-for-desktop">
                 <a href="#" class="navlink">Home</a>
                 <a href="#" class="navlink">About me</a>
                 <a href="#" class="navlink">Projects</a>
-                <a href="#" class="navlink">Contact me</a>
+                <a href="#" class="navlink">Resources</a>
+                <a href="#" class="navlink">Contact</a>
+            </div>
+            <!-- 
+         -->
+        </header>
+
+        <section class="main">
+
+            <div class="main_hellotxt">
+                <h1>Hi there, my name is Veton Shala and I am a developer</h1>
+            </div>
+            <div class="main_btn">
+
+                <a class="button" href="#">Contact me</a>
+                <a class="button" href="#">Resume</a>
+
+            </div>
+            <div class="main_social">
+                <a href="#" class="navlink"><img src="" alt="" />FB</a>
+                <a href="#" class="navlink"><img src="" alt="" />GIT</a>
+                <a href="#" class="navlink"><img src="" alt="" />LINKD</a>
+                <a href="#" class="navlink"><img src="" alt="" />INSTA</a>
+
             </div>
 
-            <a href="#" class="hide-for-desktop header__nav--hamburger ">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </nav>
-        <!-- 
-        <div class="buttons">
-            <a class="button" href="#" >Contact me</a>
-            <a class="button" href="#">Resume</a>
-        </div> -->
-    </header>
+        </section>
+    </main>
+
+
+
 
 
 
