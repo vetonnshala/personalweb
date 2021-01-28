@@ -1,9 +1,11 @@
 .aboutme {
-    height: 80vh;
+    height: auto;
     color: white;
-    width: 80%;
+    width: 90%;
+    padding: 1.06rem 1.5rem;
     margin: auto;
     margin-top: 6rem;
+    margin-bottom: 6rem;
     &__links {
         margin-bottom: 2rem;
         &--link {
@@ -16,6 +18,7 @@
             transition: 0.2s ease-in-out;
             font-family: inherit;
             position: relative;
+            z-index: 2;
             cursor: pointer;
             &::before {
                 content: "";

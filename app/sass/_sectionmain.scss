@@ -1,88 +1,112 @@
-    main {
-        height: 100vh;
-        background: linear-gradient( to bottom, rgba(10, 12, 15, 0.712), rgb(10, 12, 15)), url('../../img/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
-    .main {
-        display: flex;
+main {
+    background: linear-gradient( to bottom, rgba(10, 12, 15, 0.527), rgba(10, 12, 15, 1)), url('../../img/bckimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 1.06rem 1.5rem;
+    margin-top: 7rem;
+    @include breakpoint-down(small) {
         flex-direction: column;
-        align-items: center;
-        height: 80vh;
-        &_hellotxt {
-            text-align: center;
-            margin: 6rem 1.6rem 3rem 1.6rem;
-            font-family: 'Bowlby One SC', cursive;
-            color: #fff;
-            // animation-name: postionTxt-in;
-            // animation-duration: 1.6s;
-            // animation-delay: .5s;
-            #flip {
-                //height: 50px;
-                overflow: hidden;
-                padding: .18rem .6rem;
-            }
-        }
-        &_btn {
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        margin-top: 5rem !important;
+    }
+    &_txt {
+        &--btn {
             a {
                 text-decoration: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.455rem 1.875rem;
-                border: 0;
+                color: $primary-blue;
+                background-color: $primary-red;
+                height: 2rem;
+                width: 6rem;
+                padding: 0.6rem 1rem;
+                border: none;
                 border-radius: 50px;
-                cursor: pointer;
-                font-size: $font-medium;
-                font-weight: 500;
-            }
-            &--contact {
-                background: white;
-                color: $primary-red;
-                &:hover {
-                    background: $primary-red;
-                    box-shadow: 4px 3px 20px black;
-                    color: white;
-                }
-                &:active {
-                    box-shadow: 2px 3px 14px rgb(0, 0, 0);
-                }
-            }
-            &--resume {
-                margin-left: 1.6rem;
-                background: $primary-red;
-                color: rgb(255, 255, 255);
-                &::after {
-                    content: "\1F517 ";
-                    color: white;
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                    @include breakpoint-down(small) {
+                        margin-right: .3rem;
+                    }
                 }
                 &:hover {
-                    background: white;
-                    box-shadow: 1px 2px 10px rgb(0, 0, 0);
-                    color: $primary-red;
+                    box-shadow: 4px 3px 10px black;
                 }
                 &:active {
-                    box-shadow: 2px 3px 14px rgb(0, 0, 0);
+                    box-shadow: 3px 2px 10px black;
+                }
+                @include breakpoint-down(small) {
+                    height: 1.5rem;
+                    width: 3rem;
+                    padding: 0.2rem 0.6rem;
+                    border: none;
+                    font-size: $font-small;
+                    border-radius: 50px;
                 }
             }
         }
-        &_social {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 3rem;
-            width: 30%;
-            img {
-                height: 30px;
-                &:hover {
-                    color: $primary-red;
+        flex: 2.6;
+        &--intro {
+            margin-bottom: 2rem;
+            &-n {
+                color: $primary-red;
+                font-size: 3rem;
+                @include breakpoint-down(large) {
+                    font-size: 3rem !important;
+                }
+                @include breakpoint-down(medium) {
+                    font-size: 2.2rem !important;
+                }
+                @include breakpoint-down(small) {
+                    font-size: 1.6rem !important;
+                }
+            }
+            &-i {
+                color: white;
+                font-size: 1.9rem;
+                @include breakpoint-down(large) {
+                    font-size: 1.9rem !important;
+                }
+                @include breakpoint-down(medium) {
+                    font-size: 1.5rem !important;
+                }
+                @include breakpoint-down(small) {
+                    margin-top: 4rem;
+                    font-size: 1rem !important;
                 }
             }
         }
     }
+    &_social {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        .navlink {
+            margin-bottom: 1rem;
+            &_svg {
+                height: 60%;
+                &:hover {
+                    fill: $primary-red;
+                }
+            }
+        }
+        @include breakpoint-down(small) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 3rem;
+            .navlink {
+                margin-right: 1rem;
+                &_svg {
+                    height: 1.4rem;
+                }
+            }
+        }
+    }
+}

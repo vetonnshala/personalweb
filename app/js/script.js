@@ -26,21 +26,3 @@ btnHamburger.addEventListener('click', function() {
 
 
 //aboutme
-
-const expBtn = document.document.querySelector('aboutme ');
-const fadetxt = document.querySelectorAll('.fadetxt')
-
-expBtn.addEventListener('click', function() {
-    if (header.classList.contains('open')) { //close hamburger menu
-        fadetxt.forEach(function(element) {
-            element.classList.remove('fade-in');
-            element.classList.add('fade-out');
-        });
-    } else { //open hamburger menu 
-        fadetxt.forEach(function(element) {
-            element.classList.remove('fade-out');
-            element.classList.add('fade-in');
-        });
-    }
-
-});

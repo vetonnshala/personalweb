@@ -34,7 +34,7 @@
         align-items: center;
         justify-content: space-between;
         &--navlinks {
-            width: 50%;
+            width: 70%;
             .navlink {
                 text-decoration: none;
                 font-size: $font-medium;
@@ -89,7 +89,7 @@
         border-radius: 5px;
         margin-top: 1.5rem;
         a {
-            color: #fff;
+            color: $primary-blue;
             text-decoration: none;
             font-size: $font-medium;
             padding: 0.625rem;
@@ -100,7 +100,7 @@
                 text-decoration: none;
             }
             &:hover {
-                color: rgb(194, 194, 194);
+                color: rgb(43, 40, 92);
                 &::before {
                     opacity: 1;
                 }

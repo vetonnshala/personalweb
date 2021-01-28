@@ -1,0 +1,14 @@
+.projects {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    &__item {
+        height: 10rem;
+        background: $primary-red;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2rem;
+        &--img {}
+        &--txt {}
+    }
+}
