@@ -1,0 +1,55 @@
+.tools {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 6rem;
+    background-position: center;
+    &__container {
+        width: 90%;
+        margin: auto;
+        padding: 1.06rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        grid-gap: 1rem;
+        padding: 1rem;
+        @include breakpoint-down(small) {
+            width: 100%;
+            margin: auto;
+        }
+        &--item {
+            box-sizing: border-box;
+            margin: 0px;
+            min-width: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-width: 170px;
+            border-radius: 10px;
+            background-color: $primary-blue;
+            color: #EEEEEE;
+            cursor: pointer;
+            transition: box-shadow 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
+            box-shadow: rgba(49, 51, 70, 0.021) -7px -7px 13px, rgba(5, 7, 8, 0.521) 7px 7px 13px;
+            h3 {
+                font-size: 1.4rem;
+                color: #fff;
+                font-weight: 450;
+                @include breakpoint-down(small) {
+                    font-size: $font-small;
+                }
+            }
+            svg {
+                @include breakpoint-down(small) {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+            &:hover {
+                box-shadow: 4px 12px 12px rgba(5, 5, 5, 0.171);
+            }
+            @include breakpoint-down(small) {}
+            @include breakpoint-down(medium) {}
+        }
+    }
+}

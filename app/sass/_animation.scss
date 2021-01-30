@@ -40,4 +40,55 @@
     animation: fade-out 0.2s ease-in-out forwards;
 }
 
+.slide-in {
+    animation: slide-in 0.3s slide-in;
+}
+
+.slide-out {
+    animation: slide-out 0.3s slide-out;
+}
+
+@keyframes slide-out {
+    from {
+        overflow: visible;
+        width: 100%;
+    }
+    99% {
+        overflow: hidden;
+        width: 1%;
+    }
+    to {
+        overflow: hidden;
+        width: 0%;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        overflow: hidden;
+        width: 0;
+    }
+    1% {
+        overflow: visible;
+        width: 99%;
+    }
+    to {
+        overflow: visible;
+        width: 100%;
+    }
+}
+
+.showtxt {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.hidetxt {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+}
+
 //Welcom texy

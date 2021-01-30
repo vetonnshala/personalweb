@@ -121,3 +121,25 @@ body {
     @include breakpoint-down(medium) {}
     @include breakpoint-down(small) {}
 }
+
+.section--title {
+    font-size: $font-medium;
+    margin-bottom: 2rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+    padding: 1.06rem 1.06rem;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    transition: 0.2s ease-in-out;
+    font-weight: 500;
+    @include breakpoint-down(medium) {
+        font-size: $font-Smedium !important;
+    }
+    @include breakpoint-down(small) {
+        font-size: $font-Smedium !important;
+    }
+}
