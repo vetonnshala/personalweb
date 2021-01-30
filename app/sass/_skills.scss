@@ -1,0 +1,32 @@
+    .skills {
+        width: 100%;
+        height: 50vh;
+        margin: auto;
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            flex-wrap: wrap;
+            padding: 1.06rem 1.5rem;
+            &--item {
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                background: $primary-red;
+                border-radius: 10px;
+                &:not(:last-child) {
+                    margin-right: 3rem;
+                }
+                h3 {
+                    font-size: 1.4rem;
+                    color: $primary-blue;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
