@@ -34,7 +34,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        max-width: 1200px;
+        max-width: 1324px;
         flex-wrap: wrap;
         @include breakpoint-down(small) {
             padding: .6rem .5rem !important;
@@ -125,7 +125,7 @@
                         align-items: center;
                         -webkit-box-pack: center;
                         justify-content: center;
-                        width: 50px;
+                        width: 80px;
                         height: 50px;
                         border-radius: 100px;
                         background-color: transparent;

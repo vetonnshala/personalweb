@@ -7,6 +7,7 @@
             width: 90%;
             margin: auto;
             padding: 1.06rem 1.5rem;
+            max-width: 1324px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
             grid-gap: 1rem;
@@ -38,7 +39,7 @@
                 box-shadow: rgba(49, 51, 70, 0.021) -7px -7px 13px,
                 rgba(5, 7, 8, 0.521) 7px 7px 13px;
                 h3 {
-                    font-size: 1.2rem;
+                    font-size: $font-Smedium;
                     color: #fff;
                     font-weight: 450;
                     @include breakpoint-down(small) {

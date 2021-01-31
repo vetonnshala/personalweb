@@ -1,14 +1,15 @@
 .contact {
     width: 100%;
     margin: auto;
-    border-top: 2px solid $primary-red;
-    background: linear-gradient( to bottom, rgb(10, 12, 15), rgba(10, 12, 15, 0.863)), url('../../img/bckimg.jpg');
+    background: linear-gradient( to bottom, rgba(21, 21, 29, 0.116), rgba(27, 25, 37, 0.089)), url('../img/bckimg1.jpg');
+    outline: none;
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
         margin: auto;
+        max-width: 1224px;
         padding: 1.06rem 1.5rem;
         @include breakpoint-down(small) {
             flex-direction: column;
@@ -21,7 +22,7 @@
             justify-content: center;
             align-self: end;
             h4 {
-                font-size: $font-medium;
+                font-size: $font-Smedium;
                 @include breakpoint-down(small) {
                     font-size: $font-small;
                 }
@@ -33,17 +34,11 @@
                 margin: 0 !important;
                 font-weight: 400;
                 font-size: $font-medium;
+                @include breakpoint-down(medium) {
+                    font-size: $font-Smedium !important;
+                }
                 @include breakpoint-down(small) {
                     font-size: $font-small;
-                }
-                @include breakpoint-down(medium) {
-                    font-size: $font-Smedium;
-                }
-                svg {
-                    width: 30px;
-                    @include breakpoint-down(small) {
-                        width: 22px;
-                    }
                 }
             }
         }
@@ -52,14 +47,15 @@
             justify-content: space-around;
             align-content: center;
             width: 40%;
+            @include breakpoint-down(small) {
+                width: 50%;
+            }
             a {
-                display: flex;
-                align-content: center;
-                justify-content: space-around;
                 svg {
                     width: 22px;
                     @include breakpoint-down(small) {
                         width: 20px;
+                        margin-right: .5rem;
                     }
                 }
             }
@@ -73,7 +69,7 @@
         @include breakpoint-down(small) {
             font-size: .5rem !important;
             img {
-                height: 32px !important;
+                height: 22px !important;
             }
         }
     }
