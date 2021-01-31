@@ -26,17 +26,14 @@ btnHamburger.addEventListener('click', function() {
 
 
 //aboutme
-const aboutmeBtn = document.querySelector('.aboutmeBtn');
-const aboutmeTxt = document.querySelector('.aboutmetxt ');
-const experienceBtn = document.querySelector('.experienceBtn')
-const experiencetxt = document.querySelector('.experiencetxt');
+const aboutmeBtn = document.querySelector('#aboutmeBtn');
+const aboutmeTxt = document.querySelector('#aboutmetxt ');
+const experienceBtn = document.querySelector('#experienceBtn')
+const experiencetxt = document.querySelector('#experiencetxt');
 
 experienceBtn.addEventListener('click', function() {
-    if (aboutmeTxt.classList.contains('.showtxt ')) {
-        aboutmeTxt.classList.remove('.showtxt ');
-        aboutmeTxt.classList.add('.hidetxt ');
-        experiencetxt.classList.add('.showtxt');
-    }
+    aboutmeTxt.classList.add('.hidetxt ');
+    experiencetxt.classList.add('.showtxt ');
 });
 aboutmeBtn.addEventListener('click', function() {
     if (experiencetxt.classList.contains('.showtxt ')) {

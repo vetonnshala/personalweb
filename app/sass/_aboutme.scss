@@ -3,7 +3,7 @@
     width: 90%;
     padding: 1.06rem 1.5rem;
     margin: auto;
-    height: 50vh;
+    height: auto;
     margin-bottom: 6rem;
     margin-top: 6rem;
     &__links {
@@ -44,6 +44,9 @@
             }
             &:not(:last-child) {
                 margin-right: 3rem;
+                @include breakpoint-down(small) {
+                    margin-right: .9rem !important;
+                }
             }
             @include breakpoint-down(medium) {
                 font-size: $font-Smedium !important;
@@ -54,8 +57,24 @@
         }
     }
     &__content {
-        display: flex;
-        justify-content: center;
-        align-items: start;
+        position: relative;
+        &--txt {
+            width: 100%;
+            height: 100%;
+            @include breakpoint-down(small) {
+                font-size: $font-small !important;
+            }
+            p {
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+        #aboutmeBtn:checked~#aboutmetxt {
+            z-index: 9;
+        }
+        #experienceBtn:checked~#experiencetxt {
+            z-index: 9;
+        }
     }
 }

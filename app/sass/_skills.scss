@@ -12,8 +12,10 @@
             grid-gap: 1rem;
             padding: 1rem;
             @include breakpoint-down(small) {
-                width: 100%;
+                width: 90%;
                 margin: auto;
+                min-width: 120px;
+                grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
             }
             &--item {
                 box-sizing: border-box;
@@ -24,14 +26,19 @@
                 justify-content: center;
                 flex-direction: column;
                 min-width: 170px;
+                @include breakpoint-down(small) {
+                    min-width: 110px;
+                }
                 border-radius: 10px;
                 background-color: $primary-blue;
                 color: #EEEEEE;
                 cursor: pointer;
-                transition: box-shadow 0.2s ease-out 0s, background-color 0.2s ease-out 0s;
-                box-shadow: rgba(49, 51, 70, 0.021) -7px -7px 13px, rgba(5, 7, 8, 0.521) 7px 7px 13px;
+                transition: box-shadow 0.2s ease-out 0s,
+                background-color 0.2s ease-out 0s;
+                box-shadow: rgba(49, 51, 70, 0.021) -7px -7px 13px,
+                rgba(5, 7, 8, 0.521) 7px 7px 13px;
                 h3 {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     color: #fff;
                     font-weight: 450;
                     @include breakpoint-down(small) {
@@ -40,9 +47,9 @@
                 }
                 svg {
                     @include breakpoint-down(small) {
-                        width: 50%;
-                        height: 50%;
-                        margin-bottom: 2rem;
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: .5rem;
                     }
                 }
                 &:hover {
