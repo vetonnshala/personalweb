@@ -71,7 +71,8 @@
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
                 @include breakpoint-down(small) {
-                    padding: .99rem .5rem;
+                    padding: 1.9rem 1.5rem;
+                    height: 3rem;
                 }
                 &:hover {
                     height: 100%;
@@ -137,7 +138,7 @@
                         box-shadow: rgba(114, 235, 201, 0.329) -7px -7px 13px, rgba(17, 116, 107, 0.445) 7px 7px 13px;
                         @include breakpoint-down(small) {
                             font-size: .8rem !important;
-                            width: 30px;
+                            width: 50px;
                             height: 30px;
                             svg {
                                 width: 20px;

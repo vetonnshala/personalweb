@@ -20,7 +20,7 @@ body {
     font-weight: 300;
     background: $primary-blue;
     &.noscroll {
-        overflow: hidden;
+        // overflow: hidden;
     }
 }
 
@@ -124,7 +124,7 @@ body {
 
 .section--title {
     font-size: $font-medium;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: white;
     width: 90%;
     margin: auto;
@@ -141,6 +141,13 @@ body {
     }
     @include breakpoint-down(small) {
         font-size: $font-Smedium !important;
+    }
+    span {
+        font-size: $font-small;
+        color: rgba(255, 255, 255, 0.11);
+        @include breakpoint-down(small) {
+            font-size: .5rem !important;
+        }
     }
 }
 

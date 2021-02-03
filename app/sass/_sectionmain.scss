@@ -63,6 +63,7 @@ main {
         flex: 2.6;
         &--intro {
             margin-bottom: 2rem;
+            animation: slideelem 1s linear;
             &-n {
                 color: $primary-red;
                 font-size: $font-big;

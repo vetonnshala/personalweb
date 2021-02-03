@@ -87,3 +87,54 @@
 }
 
 //Welcom texy
+@keyframes slideelem {
+    0% {
+        overflow: hidden;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    10% {
+        overflow: visible;
+        transform: translateX(-90%);
+        opacity: 0.1;
+    }
+    20% {
+        overflow: visible;
+        transform: translateX(-80%);
+        opacity: 0.2;
+    }
+    30% {
+        overflow: visible;
+        transform: translateX(-70%);
+        opacity: 0.1;
+    }
+    40% {
+        overflow: visible;
+        transform: translateX(-60%);
+        opacity: 0.1;
+    }
+    60% {
+        overflow: visible;
+        transform: translateX(-40%);
+        opacity: 0.2;
+    }
+    70% {
+        overflow: visible;
+        transform: translateX(-30%);
+        opacity: 0.3;
+    }
+    80% {
+        overflow: visible;
+        transform: translateX(-20%);
+    }
+    90% {
+        overflow: visible;
+        transform: translateX(-10%);
+        opacity: 0.6;
+    }
+    100% {
+        overflow: visible;
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

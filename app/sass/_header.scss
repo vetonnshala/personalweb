@@ -35,7 +35,10 @@
         align-items: center;
         justify-content: space-between;
         &--navlinks {
-            width: 70%;
+            width: 50%;
+            @include breakpoint-down(medium) {
+                width: 60%;
+            }
             .navlink {
                 text-decoration: none;
                 font-size: $font-Smedium;
@@ -87,6 +90,7 @@
         position: absolute;
         left: 50%;
         width: calc(100% - 3rem);
+        height: calc(100% - 60vh);
         transform: translateX(-50%);
         background: $primary-red;
         padding: 1.625rem;
