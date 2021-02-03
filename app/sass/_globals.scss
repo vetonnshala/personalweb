@@ -144,7 +144,7 @@ body {
     }
     span {
         font-size: $font-small;
-        color: rgba(255, 255, 255, 0.11);
+        color: rgba(255, 255, 255, 0.253);
         @include breakpoint-down(small) {
             font-size: .5rem !important;
         }
