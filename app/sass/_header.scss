@@ -22,7 +22,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $primary-blue;
+        background: linear-gradient( to bottom, rgba(21, 21, 29, 0.623), rgba(27, 25, 37, 0.473)), url('../img/bckimg1.jpg');
     }
     //NAVBAR STYLE
     &__nav {
@@ -92,12 +92,12 @@
         width: calc(100% - 3rem);
         height: calc(100% - 20vh);
         transform: translateX(-50%);
-        background: $primary-red;
+        background: linear-gradient( to bottom, rgba(21, 21, 29, 0.76), rgba(27, 25, 37, 0.575)), url('../img/bckimg1.jpg');
         padding: 1.625rem;
         border-radius: 5px;
         margin-top: 1.5rem;
         a {
-            color: $primary-blue;
+            color: white;
             text-decoration: none;
             font-size: $font-medium;
             padding: 0.625rem;

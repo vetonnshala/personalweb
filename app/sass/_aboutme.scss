@@ -4,7 +4,7 @@
     padding: 1.06rem 1.5rem;
     margin: auto;
     height: auto;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     margin-top: 6rem;
     max-width: 1324px;
     &__links {
@@ -92,6 +92,7 @@
             &__c {
                 ul {
                     li {
+                        font-size: .8rem;
                         @include breakpoint-down(small) {
                             font-size: 0.7rem !important;
                         }

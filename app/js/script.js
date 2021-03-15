@@ -25,6 +25,7 @@ btnHamburger.addEventListener('click', function() {
 });
 
 
+
 // //aboutme
 // const aboutmeBtn = document.querySelector('#aboutmeBtn');
 // const aboutmeTxt = document.querySelector('#aboutmetxt ');
