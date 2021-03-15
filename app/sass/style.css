@@ -646,7 +646,7 @@ body {
   position: absolute;
   left: 50%;
   width: calc(100% - 3rem);
-  height: calc(100% - 20vh);
+  height: calc(100% - 50vh);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(21, 21, 29, 0.76)), to(rgba(27, 25, 37, 0.575))), url("../img/bckimg1.jpg");
