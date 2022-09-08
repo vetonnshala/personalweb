@@ -2,7 +2,7 @@
 FROM node
 
 ## Install dependencies in the root of the Container
-COPY package.json .
+COPY . /
 ENV NODE_PATH=/node_modules
 ENV PATH=$PATH:/node_modules/.bin
 RUN npm
